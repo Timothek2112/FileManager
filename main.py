@@ -34,6 +34,7 @@ while True:
                 FIO = F + " " + I + " " + O
                 
                 phone = input("Insert phone number: ")
+                FIO += "..............%s" % phone
                 checkIfNumeric(phone)
                 print(FileManager.write(fm,name,FIO))
 
