@@ -1,12 +1,12 @@
 from genericpath import isfile
 
 class MessageHaveNumbers(Exception):
-    def __init__(self, message="FIO can't include non-alphabetic simbols"):
+    def __init__(self, message="FIO can't include non-alphabetic simbols\nPlease, insert only alphabetic simbols"):
         self.message = message
         super().__init__(self.message)
         
 class PhoneHaveNonNumeric(Exception):
-    def __init__(self, message = "Phone number cannot include non-numeric simbols"):
+    def __init__(self, message = "Phone number cannot include non-numeric simbols\nPlease, insert only numeric simbols"):
         self.message = message
         super().__init__(self.message)
         
